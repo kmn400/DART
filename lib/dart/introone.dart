@@ -8,5 +8,5 @@ void introduceOneself() {
   double height = 200.1;
   String gender = '남';
 
-  print('$name, $age, $height, $gender');
+  print('$name, $age, ${height}cm, $gender자입니다.');
 }
