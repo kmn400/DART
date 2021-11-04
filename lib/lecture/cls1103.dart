@@ -26,11 +26,10 @@ class Cleric {
     Random random = Random();
     print(random.nextInt(3));
     if (mp == maxMp) {
-      print(mp = maxMp);
+      print(maxMp);
     }
     else
       print(random + 3);
       return result;
   }
 }
-
