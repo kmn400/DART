@@ -13,7 +13,7 @@ class Cleric {
   Cleric({this.name, this.hp, this.mp});
 
   void selfAid(){
-    int mp1 = this.mp - 5;
-    int hp1 = maxhp;
+    int mp = mp - 5;
+    int hp = maxhp;
   }
 }
