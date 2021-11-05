@@ -1,9 +1,9 @@
 import 'dart:math';
 
 void main() {
-  Cleric cleric = Cleric(name: '김민호', hp: 20, mp: 4);
-  print(cleric.pray(3));
-
+  Cleric cleric = Cleric(name: 'korea', hp: 100, mp: 50);
+  cleric.mp = 30;
+  print(cleric.pray(5));
 }
 
 class Cleric {
@@ -11,8 +11,8 @@ class Cleric {
   int hp;
   int mp;
 
-  final int maxHp = 50;
-  final int maxMp = 10;
+  final int maxHp = 100;
+  final int maxMp = 50;
 
   Cleric({this.name, this.hp, this.mp});
 
@@ -24,12 +24,19 @@ class Cleric {
   int pray(int sec) {
     int result = 0;
     Random random = Random();
-    print(random.nextInt(3));
-    if (mp == maxMp) {
-      print(maxMp);
+    random.nextInt(3);
+    if (mp <= maxMp && mp > 0) {
+      if (mp + random.nextInt(3) + sec >= maxMp) {
+        return maxMp;
+      }
+      else{
+      return mp + random.nextInt(3) + sec;
+    }
+    }
+    else if (mp > maxMp) {
+      return maxMp;
     }
     else
-      print(random + 3);
       return result;
   }
 }
