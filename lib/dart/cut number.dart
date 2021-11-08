@@ -1,16 +1,11 @@
 void main() {
-  Word word = Word('abcdefghijklmnopqrstuvwxyz');
-
-  print(word.isVowel(0)); // true
-  print(word.isVowel(1)); // false
-  print(word.isVowel(2)); // false
-  print(word.isVowel(3)); // false
-  print(word.isVowel(4)); // true
+  SomeObject a = SomeObject();
+  List<SomeObject> objects = List.filled(10, a);
 }
-class Word {
-  String letters;
+class Num {
+  int numbers;
 
-  Word(this.letters);
+  Num(this.numbers);
 
   String result1 = 'false';
 
@@ -37,9 +32,5 @@ class Word {
       result = true;
     }
     return result;
-  }
-
-  bool isConsonant(int i) {
-    return !'aeiouAEIOU'.contains(letters[i]);
   }
 }
