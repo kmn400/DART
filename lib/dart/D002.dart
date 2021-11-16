@@ -10,14 +10,14 @@ void main() {
 }
 
 class Compare {
-  int par(int a, int b){
-    int result = 0;
+  String par(int a, int b){
+    String result = '';
   if (a > b) {
-    result = a;
+    result = '$a';
   } else if (a == b) {
-    result = int.parse('eq');
+    result = 'eq';
   } else {
-    result = b;
+    result = '$b';
   }
   return result;
   }
