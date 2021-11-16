@@ -1,16 +1,25 @@
+import 'dart:convert';
+import 'dart:io';
+
 void main() {
-  print(exam(60, 90));
-  print(exam(123, 45));
+  List<String> inputs = stdin.readLineSync(encoding: utf8).split(' ');
+  int a = int.parse(inputs[0]);
+  int b = int.parse(inputs[1]);
+
+  Calculator calculator = Calculator();
+  print(calculator.triangle(a, b));
 }
-//화살표 표기법, 람다식(lambda expression)
-int exam(int a, int b) {
-  int result = 0;
 
-  //삼각형의 내각의 합
-  int i = 180;
-
-  result = i - (a + b);
-
-  return result;
-
+class Calculator {
+  String triangle(int a, int b) {
+    String result = '';
+    if (a + b >= 180) {
+      result = 'null';
+    } else if (a + b < 180 || a + b > 0) {
+      result = '${180 - a - b}';
+    } else {
+      result = 'null';
+    }
+    return result;
+    }
 }
