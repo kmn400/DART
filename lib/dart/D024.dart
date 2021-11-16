@@ -15,7 +15,7 @@ class Calculator {
     String result = '';
     if (a + b >= 180) {
       result = 'null';
-    } else if (a + b < 180 || a + b > 0) {
+    } else if (a + b < 180 && a + b > 0) {
       result = '${180 - a - b}';
     } else {
       result = 'null';
