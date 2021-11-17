@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print('남자면 0을 여자면 1을 입력하세요');
+  print('남자면 0을 여자면 1을  입력하세요');
   String genderString = stdin.readLineSync();
   int gender = int.parse(genderString);
   print('나이를 입력하세요');
