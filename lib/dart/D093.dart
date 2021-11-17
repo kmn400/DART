@@ -15,7 +15,7 @@ void main() {
 class Cut {
   String result = '';
 
-  String cal(a, b, c, d) {
+  String cal(String a, String b, String c, String d) {
     if (a == b && a == c && a == d && b == c && c == d) {
       result = '$a$b$c$d';
     } else {
