@@ -15,9 +15,6 @@ void main() {
   } else if (gender == 1) {
     print('나는 여자입니다');
   }
-
-  if (gender == 0) {
-    print('$age 살입니다');
-  }
+  print('$age 살입니다');
   print('잘 부탁합니다');
 }
