@@ -1,10 +1,10 @@
 void main() {
-introduceOneself();
+  introduceOneself();
 }
 
 void introduceOneself() {
   String name = 'Kim minho';
-  int age = 30;
+  int age = 100;
   double height = 200.1;
   String gender = '남';
 
