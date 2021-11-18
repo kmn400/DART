@@ -3,8 +3,6 @@ import 'dart:math';
 void main() {
   print(calcTriangleArea(bottom: 3, height: 6));
   print(calcCircleArea(radius: 4));
-
-
 }
 
 double calcTriangleArea({double bottom, double height}) {
