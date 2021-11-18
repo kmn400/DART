@@ -1,9 +1,13 @@
+import 'dart:convert';
+import 'dart:io';
+
 void main() {
-  int n = -98;
-  Abs kim = Abs();
- // Abs abd = Abs();
-  print(kim.abc(n));
-  print(kim.abd(n));
+  String input = stdin.readLineSync(encoding: utf8);
+  int a = int.parse(input);
+  Abs abs = Abs();
+
+  print(abs.abc(a));
+  print(abs.abd(a));
 }
 
 class Abs {
