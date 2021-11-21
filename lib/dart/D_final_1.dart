@@ -13,7 +13,6 @@ void main() {
 
 class Oddeven {
   String cal(int a, int b) {
-    String result = '';
     int anum = a;
     if (a == 0) {
       anum = 0;
@@ -26,16 +25,8 @@ class Oddeven {
     } else {
       bnum = b % 2;
     }
-    //아래 if문을 람다식으로 바꿀 수 있는지 궁금합니다.
-    if (anum == 0 && bnum == 0) {
-      result = 'NO';
-    } else if (anum == 1 && bnum == 1) {
-      result = 'NO';
-    } else if (anum == 1 && bnum == 0) {
-      result = 'YES';
-    } else {
-      result = 'YES';
-    }
-    return result;
+    //아래 삼항연산을 람다식으로 바꿀 수 있는지 궁금합니다.
+    return  anum == bnum ? 'NO' : 'YES';
+    // 그럴리는 없겠지만, 결과값이 null이 나왔을 경우의 대응책
   }
 }
