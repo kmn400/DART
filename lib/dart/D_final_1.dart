@@ -26,6 +26,7 @@ class Oddeven {
     } else {
       bnum = b % 2;
     }
+    //아래 if문을 람다식으로 바꿀 수 있는지 궁금합니다.
     if (anum == 0 && bnum == 0) {
       result = 'NO';
     } else if (anum == 1 && bnum == 1) {
