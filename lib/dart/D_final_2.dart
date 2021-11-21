@@ -2,18 +2,31 @@ import 'dart:io';
 
 void main() {
   //입력은 4행이며 입력의 끝에는 개행이 포함됩니다??
-  String a = stdin.readLineSync();
-  String b = stdin.readLineSync();
-  String c = stdin.readLineSync();
-  String d = stdin.readLineSync();
+  int a = int.parse(stdin.readLineSync().substring(2));
+  int b = int.parse(stdin.readLineSync().substring(2));
+  int c = int.parse(stdin.readLineSync().substring(2));
+  int d = int.parse(stdin.readLineSync().substring(2));
 
   Findcard findcard = Findcard();
+
   print(findcard.find(a, b, c, d));
 }
-
 class Findcard {
-  String find(String a, String b, String c, String d) {
+  String find(int a, int b, int c, int d) {
     String result = '';
+    var items = {a, b, c, d};
+    var findnum = {...items, 1, 2, 3, 4, 5};
+    if (findnum.contains(1) != true) {
+      result = '1';
+    } else if (findnum.contains(2) != true) {
+      result = '2';
+    } else if (findnum.contains(3) != true) {
+      result = '3';
+    } else if (findnum.contains(4) != true) {
+      result = '4';
+    } else if (findnum.contains(5) != true) {
+      result = '5';
+    }
     return result;
   }
 }
