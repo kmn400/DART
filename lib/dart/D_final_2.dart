@@ -11,20 +11,20 @@ void main() {
 
   print(findcard.find(a, b, c, d));
 }
+
 class Findcard {
   String find(int a, int b, int c, int d) {
     String result = '';
     var items = {a, b, c, d};
-    var findnum = {...items, 1, 2, 3, 4, 5};
-    if (findnum.contains(1) != true) {
+    if (items .contains(1) != true) {
       result = '1';
-    } else if (findnum.contains(2) != true) {
+    } else if (items .contains(2) != true) {
       result = '2';
-    } else if (findnum.contains(3) != true) {
+    } else if (items .contains(3) != true) {
       result = '3';
-    } else if (findnum.contains(4) != true) {
+    } else if (items .contains(4) != true) {
       result = '4';
-    } else if (findnum.contains(5) != true) {
+    } else if (items .contains(5) != true) {
       result = '5';
     }
     return result;
