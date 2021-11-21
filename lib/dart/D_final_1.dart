@@ -13,6 +13,7 @@ void main() {
 
 class Oddeven {
   String cal(int a, int b) {
+    //여기서 컴퓨터 내부에 충돌이 나지 않으면서, anum과 bnum을 동시에 처리할 수 있는지?
     int anum = a;
     if (a == 0) {
       anum = 0;
