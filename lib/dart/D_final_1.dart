@@ -9,6 +9,12 @@ void main() {
 
   Oddeven oddeven = Oddeven();
   print(oddeven.cal(a, b));
+
+  if (solve2(a, b)) {
+    print('YES');
+  } else {
+    print('NO');
+  }
 }
 
 class Oddeven {
@@ -31,3 +37,5 @@ class Oddeven {
     // 그럴리는 없겠지만, 결과값이 null이 나왔을 경우의 대응책
   }
 }
+
+bool solve2(int a, int b) => a.isEven == b.isOdd;
