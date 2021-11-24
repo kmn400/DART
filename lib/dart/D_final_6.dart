@@ -21,6 +21,8 @@ void main() {
 result += '1'
 위 식은 for문이 돌 때마다, String '1'을 추가함.
 
+아래는 잘못된 코드
+
 class Cal {
   String count(List<String> inputs) {
     String result = '1';
