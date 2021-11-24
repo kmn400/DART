@@ -51,4 +51,4 @@ class CollectCal {
     }
     return result;
   }
-}
+} 
