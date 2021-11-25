@@ -18,16 +18,22 @@ void main() {
   net.sort();
 
   Cal cal = Cal();
-  print(cal.subtract(net));
+  print(cal.subtract(net)[0]);
+  print(cal.subtract(net)[1]);
+  print(cal.subtract(net)[2]);
+  print(cal.subtract(net)[3]);
 }
 
 class Cal {
-  int subtract(List<int> net) {
-    int result = 0;
-    for (int i = 0; i < 5; i++) {
-      result = net[i + 1] - net[i];
+  /* 메서드를 리스트로 설정해서 for문 내부에서
+  'add'를 사용하여 값을 선언한 result(리스트)에
+  담는 것이 중요. 그러려면 메서드를 list로 선언해주는 것이 필요 */
+  List<int> subtract(List<int> net) {
+    List<int> result = [];
+    for (int i = 0; i < 4; i++) {
+      result.add(net[i + 1] - net[i]);
     }
+    result.sort();
     return result;
   }
 }
-//선생님, 이 코드  작동을 안하는데 이유가 궁금합니다.
